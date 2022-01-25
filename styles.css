@@ -28,7 +28,7 @@ body {
     padding: .5em;
     /* 2 Nav bar scrolls with window and becomes stuck when it reaches the top of the page. */
     position: sticky;
-    top: 0px;
+    top: 0;
   }
   
   nav ul {
@@ -62,15 +62,14 @@ body {
     /* 4 Article and aside are a two column layout. */
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
   }
   nav ul{
     /* 1 Display navigation links in a row with equal space around each. */
     display: flex;
     justify-content: space-around;
   }
-  nav li {
-    flex: 1;
-  }
+
   .photos {
     /* 5 Photos display in a two column grid with 1px gap between. */
     display: grid;
